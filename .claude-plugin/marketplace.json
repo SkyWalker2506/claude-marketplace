@@ -1,0 +1,39 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "SkyWalker2506-claude-plugins",
+  "description": "Custom Claude Code plugins — Telegram bridge, AI PR review, daily health check, agent sync validator",
+  "owner": {
+    "name": "SkyWalker2506",
+    "url": "https://github.com/SkyWalker2506"
+  },
+  "plugins": [
+    {
+      "name": "telegram-bridge",
+      "description": "Bidirectional Telegram bot for Claude Code — text, photo, document, voice (Whisper TR/EN). Control Claude from anywhere via Telegram.",
+      "category": "communication",
+      "source": "./plugins/telegram",
+      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/telegram"
+    },
+    {
+      "name": "ai-review",
+      "description": "Automated GitHub PR review via OpenRouter free models (Gemma 3 27B). Posts AI-generated review comments on pull requests.",
+      "category": "development",
+      "source": "./plugins/ai-review",
+      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/ai-review"
+    },
+    {
+      "name": "daily-check",
+      "description": "Daily system health check — Ollama models, MCP servers, API keys, disk/RAM usage, token cost report.",
+      "category": "productivity",
+      "source": "./plugins/daily-check",
+      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/daily-check"
+    },
+    {
+      "name": "sync-agents",
+      "description": "Validate and sync agent .md frontmatter ↔ agent-registry.json. Detects missing agents, schema mismatches, and orphaned registry entries.",
+      "category": "development",
+      "source": "./plugins/sync-agents",
+      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/sync-agents"
+    }
+  ]
+}
