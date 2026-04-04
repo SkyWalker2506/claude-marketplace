@@ -1,56 +1,40 @@
 # SkyWalker2506 — Claude Code Plugin Marketplace
 
-Custom plugins for Claude Code. Add this marketplace to get access to all plugins below.
+Plugin kataloğu. Her plugin ayrı repoda yaşar — bu repo sadece index.
 
-## Add This Marketplace
-
-```bash
-claude plugin marketplace add github:SkyWalker2506/claude-plugins
-```
-
-Then browse and install via `/plugin > Discover` or:
+## Marketplace'i Ekle
 
 ```bash
-/plugin install telegram-bridge@SkyWalker2506-claude-plugins
-/plugin install ai-review@SkyWalker2506-claude-plugins
-/plugin install daily-check@SkyWalker2506-claude-plugins
-/plugin install sync-agents@SkyWalker2506-claude-plugins
+claude plugin marketplace add SkyWalker2506/claude-plugins
 ```
 
-## Plugins
+Sonra `/plugin > Discover` ile keşfet, istediğini kur/kaldır.
 
-| Plugin | Description | Version |
-|--------|-------------|---------|
-| [telegram-bridge](plugins/telegram/) | Bidirectional Telegram bot — text, photo, doc, voice (Whisper TR/EN) | 1.1.0 |
-| [ai-review](plugins/ai-review/) | Automated GitHub PR review via OpenRouter free models (Gemma 3 27B) | 1.0.0 |
-| [daily-check](plugins/daily-check/) | Daily system health: Ollama, MCP, API keys, disk, RAM, token cost | 1.0.0 |
-| [sync-agents](plugins/sync-agents/) | Validate and sync agent .md frontmatter ↔ agent-registry.json | 1.0.0 |
+## Pluginler
 
-## Structure
+| Plugin | Repo | Açıklama |
+|--------|------|----------|
+| `telegram-bridge` | [ccplugin-telegram](https://github.com/SkyWalker2506/ccplugin-telegram) | Telegram bot — text/foto/ses (Whisper TR/EN) |
+| `ai-review` | [ccplugin-ai-review](https://github.com/SkyWalker2506/ccplugin-ai-review) | GitHub PR review (OpenRouter Gemma 3 27B, ücretsiz) |
+| `daily-check` | [ccplugin-daily-check](https://github.com/SkyWalker2506/ccplugin-daily-check) | Günlük sistem sağlık kontrolü |
+| `sync-agents` | [ccplugin-sync-agents](https://github.com/SkyWalker2506/ccplugin-sync-agents) | Agent registry ↔ .md senkronizasyonu |
 
-```
-plugins/
-├── telegram/           # Telegram bot bridge
-├── ai-review/          # AI PR review via OpenRouter
-├── daily-check/        # Daily health monitoring
-└── sync-agents/        # Agent registry validator
-```
+## Direkt Kurulum
 
-Each plugin follows the [Claude Code plugin format](https://github.com/anthropics/claude-plugins-official):
-```
-plugin-name/
-├── .claude-plugin/plugin.json   # metadata
-├── commands/                    # slash commands
-├── skills/                      # auto-injected skills
-└── README.md
+```bash
+claude plugin install telegram-bridge@SkyWalker2506-claude-plugins
+claude plugin install ai-review@SkyWalker2506-claude-plugins
+claude plugin install daily-check@SkyWalker2506-claude-plugins
+claude plugin install sync-agents@SkyWalker2506-claude-plugins
 ```
 
-## Requirements
+## Yeni Plugin Eklemek
 
-- Claude Code (latest)
-- `~/.claude/secrets/secrets.env` with relevant API keys
+1. `SkyWalker2506/ccplugin-<name>` reposu aç
+2. `.claude-plugin/plugin.json`, `commands/`, `skills/` ekle
+3. `marketplace.json`'a entry ekle (SHA güncelle)
+4. Push → `claude plugin marketplace refresh SkyWalker2506/claude-plugins`
 
-## Related
+## İlgili
 
-- [claude-config](https://github.com/SkyWalker2506/claude-config) — Full Multi-Agent OS setup (110 agents, local-first routing, install.sh)
-- [claude-secrets](https://github.com/SkyWalker2506/claude-secrets) — Private secrets template (fork for your own secrets)
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — 110 agent Multi-Agent OS

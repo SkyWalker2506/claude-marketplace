@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "SkyWalker2506-claude-plugins",
-  "description": "Custom Claude Code plugins — Telegram bridge, AI PR review, daily health check, agent sync validator",
+  "description": "Custom Claude Code plugins by SkyWalker2506 — Telegram bridge, AI PR review, daily health check, agent sync",
   "owner": {
     "name": "SkyWalker2506",
     "url": "https://github.com/SkyWalker2506"
@@ -11,29 +11,45 @@
       "name": "telegram-bridge",
       "description": "Bidirectional Telegram bot for Claude Code — text, photo, document, voice (Whisper TR/EN). Control Claude from anywhere via Telegram.",
       "category": "communication",
-      "source": "./plugins/telegram",
-      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/telegram"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-telegram.git",
+        "sha": "1fd865809a37505117ef1e6f23a4efa2a39865cf"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-telegram"
     },
     {
       "name": "ai-review",
       "description": "Automated GitHub PR review via OpenRouter free models (Gemma 3 27B). Posts AI-generated review comments on pull requests.",
       "category": "development",
-      "source": "./plugins/ai-review",
-      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/ai-review"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-ai-review.git",
+        "sha": "af4d955ffb89478e410c1e7c52e77226e7dceb41"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-ai-review"
     },
     {
       "name": "daily-check",
       "description": "Daily system health check — Ollama models, MCP servers, API keys, disk/RAM usage, token cost report.",
       "category": "productivity",
-      "source": "./plugins/daily-check",
-      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/daily-check"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-daily-check.git",
+        "sha": "62a93d1aeed46d0fd66d7a0b2b28231d3f5df67f"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-daily-check"
     },
     {
       "name": "sync-agents",
-      "description": "Validate and sync agent .md frontmatter ↔ agent-registry.json. Detects missing agents, schema mismatches, and orphaned registry entries.",
+      "description": "Validate and sync agent .md frontmatter with agent-registry.json. Detects mismatches and orphaned entries.",
       "category": "development",
-      "source": "./plugins/sync-agents",
-      "homepage": "https://github.com/SkyWalker2506/claude-plugins/tree/main/plugins/sync-agents"
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-sync-agents.git",
+        "sha": "e69d98af830896dd3f8aacd37a2312258aeafb56"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-sync-agents"
     }
   ]
 }
