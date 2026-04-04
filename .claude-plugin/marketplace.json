@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "SkyWalker2506-claude-plugins",
-  "description": "Custom Claude Code plugins by SkyWalker2506 — Telegram bridge, AI PR review, daily health check, agent sync",
+  "description": "14 custom Claude Code plugins — Jira suite, code quality, research, autonomous ops, Telegram bridge, Flutter/Firebase, Git/GitHub, and more",
   "owner": {
     "name": "SkyWalker2506",
     "url": "https://github.com/SkyWalker2506"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "telegram-bridge",
-      "description": "Bidirectional Telegram bot for Claude Code — text, photo, document, voice (Whisper TR/EN). Control Claude from anywhere via Telegram.",
+      "description": "Bidirectional Telegram bot for Claude Code — text, photo, document, voice (Whisper TR/EN). Persistent agent mode with Haiku.",
       "category": "communication",
       "source": {
         "source": "url",
@@ -20,7 +20,7 @@
     },
     {
       "name": "ai-review",
-      "description": "Automated GitHub PR review via OpenRouter free models (Gemma 3 27B). Posts AI-generated review comments on pull requests.",
+      "description": "Automated GitHub PR review via OpenRouter free models (Gemma 3 27B). $0 cost.",
       "category": "development",
       "source": {
         "source": "url",
@@ -42,7 +42,7 @@
     },
     {
       "name": "sync-agents",
-      "description": "Validate and sync agent .md frontmatter with agent-registry.json. Detects mismatches and orphaned entries.",
+      "description": "Validate and sync agent .md frontmatter with agent-registry.json for Multi-Agent OS.",
       "category": "development",
       "source": {
         "source": "url",
@@ -50,6 +50,116 @@
         "sha": "e69d98af830896dd3f8aacd37a2312258aeafb56"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-sync-agents"
+    },
+    {
+      "name": "jira-suite",
+      "description": "Complete Jira management — /jira-run loops, sprint dashboard, task routing, decision workflow, Atlassian MCP included.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-jira-suite.git",
+        "sha": "de79097b04c82fa8fe5899b49215d23833741d79"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-jira-suite"
+    },
+    {
+      "name": "code-quality",
+      "description": "Code audit, CLAUDE.md refinement, jCodeMunch indexing — security, performance, cost, cleanup scanning.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-code-quality.git",
+        "sha": "9524246adbf46987972c364a6f867a12bff523ca"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-code-quality"
+    },
+    {
+      "name": "research-tools",
+      "description": "Web research, 12-category project analysis, PRD generation, autonomous Ralph execution. Fetch MCP included.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-research-tools.git",
+        "sha": "2e1e465ab393b1e3b90a247d8183884d698595ae"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-research-tools"
+    },
+    {
+      "name": "autonomous-ops",
+      "description": "Autonomous execution modes — /yolo (zero questions), /team-build (multi-agent loop), /rbg (background), /yolo-log.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops.git",
+        "sha": "0ede3cab566492c17d1ee856cfbbf8cbeb741f9e"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops"
+    },
+    {
+      "name": "devtools-setup",
+      "description": "Setup, migration, MCP config, secrets management, GitHub auth — /install, /bind, /migration, /add-mcp.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-devtools-setup.git",
+        "sha": "3784c47816e6e0d8d279140ca56262e1f17b1b0e"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-devtools-setup"
+    },
+    {
+      "name": "flutter-firebase",
+      "description": "Flutter + Firebase MCP integration — build, test, hot reload, Firestore CRUD, Storage, Auth.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-flutter-firebase.git",
+        "sha": "e902466b137a012fcee018a59d72db333157fdc7"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-flutter-firebase"
+    },
+    {
+      "name": "git-github",
+      "description": "Git + GitHub MCP integration — PR creation, issue management, branch ops, code search, reviews.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-git-github.git",
+        "sha": "0bd8974c7c71c8fcebd6eed7aaa1accd3de64b39"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-git-github"
+    },
+    {
+      "name": "sprint-planner",
+      "description": "Sprint planning from PRD/analysis — epic/story generation, estimation, Jira task creation.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-sprint-planner.git",
+        "sha": "76d940fb5f1cac8ba48962d28a4a5aea53a2bc1c"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-sprint-planner"
+    },
+    {
+      "name": "agent-browser",
+      "description": "Headless browser automation for AI agents — navigate, fill forms, click, screenshot, scrape, e2e test.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-agent-browser.git",
+        "sha": "c9c68904ca126513c0d457aba4c6c1ace24a4dfb"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-agent-browser"
+    },
+    {
+      "name": "opencode-bridge",
+      "description": "OpenCode (Zen) + Ollama local model bridge — free/local LLM switching, model management.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git",
+        "sha": "fc144d70bbe4dc4dda62df431d55e831c829f561"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-opencode-bridge"
     }
   ]
 }
