@@ -49,6 +49,42 @@ Then browse with `/plugin > Discover`, or install directly from the command line
 
 ---
 
+## Agent Catalog
+
+claude-config includes 131 AI agents across 15 categories. Each agent has specific capabilities, model assignments, and escalation rules.
+
+### Agent Packs by Category
+
+| Pack | Agents | For |
+|------|--------|-----|
+| **Backend & Code** | B1-B21 | API, Flutter, Unity, Python, JS, security, testing |
+| **Code Review** | C1-C6 | Lint, security scan, AI review, CI review |
+| **Design & 2D** | D1-D10 | UI/UX, Figma, brand identity, motion graphics |
+| **3D & CAD** | E1-E5 | Blender, CAD, render pipeline, asset optimization |
+| **Data & Analytics** | F1-F10 | SQL, pandas, visualization, ETL, statistics |
+| **AI Ops** | G1-G10 | Agent coordination, MCP health, monitoring |
+| **Market Research** | H1-H15 | SEO, GEO, competitor analysis, social media |
+| **Jira & PM** | I1-I10 | Sprint planning, backlog, standup, estimation |
+| **DevOps** | J1-J9 | Docker, cloud deploy, Firebase, load testing |
+| **Research** | K1-K10 | Web research, docs, trends, compliance |
+| **Productivity** | L1-L6 | Email, calendar, notes, file organization |
+| **Marketing** | M1-M4 | Landing pages, A/B testing, analytics |
+| **Prompt Engineering** | N1-N2 | Prompt optimization, agent design |
+| **Sales & BizDev** | O1-O5 | Proposals, CRM, outreach, pricing |
+
+### How Agents Work
+
+Agents are capability-tagged profiles that define which model, MCP servers, and rules to use for a task. The dispatch system automatically matches your task to the right agent.
+
+```
+Your task → A2 Task Router → capability match → B2 Backend Coder (Sonnet)
+                                              → B13 Security Auditor (Opus)
+```
+
+Full agent definitions: [claude-config/agents/](https://github.com/SkyWalker2506/claude-config/tree/main/agents)
+
+---
+
 ## Adding a New Plugin
 
 1. Create a repo: `SkyWalker2506/ccplugin-<name>`
