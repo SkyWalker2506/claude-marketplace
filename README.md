@@ -1,6 +1,6 @@
 # Claude Code Plugin Marketplace
 
-by [Musab Kara](https://github.com/SkyWalker2506)
+by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
 **14 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
@@ -60,3 +60,7 @@ Then browse with `/plugin > Discover`, or install directly from the command line
 
 - [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
 - [Claude Code Plugins Official](https://github.com/anthropics/claude-plugins-official) — Anthropic's official marketplace
+
+## Author
+
+**Musab Kara** — [LinkedIn](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
