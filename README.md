@@ -1,11 +1,11 @@
-# SkyWalker2506 — Claude Code Plugin Marketplace
+# Claude Code Plugin Marketplace by Musab Kara
 
 14 plugin. Her biri ayrı repoda. Bu repo sadece katalog.
 
 ## Marketplace Ekle
 
 ```bash
-claude plugin marketplace add SkyWalker2506/claude-plugins
+claude plugin marketplace add SkyWalker2506/claude-marketplace
 ```
 
 Sonra: `/plugin > Discover` ile keşfet, istediğini kur/kaldır.
@@ -41,11 +41,12 @@ Sonra: `/plugin > Discover` ile keşfet, istediğini kur/kaldır.
 ## Kurulum Örnekleri
 
 ```bash
-claude plugin install jira-suite@SkyWalker2506-claude-plugins
-claude plugin install code-quality@SkyWalker2506-claude-plugins
-claude plugin install autonomous-ops@SkyWalker2506-claude-plugins
+claude plugin install jira-suite@musabkara-claude-marketplace
+claude plugin install code-quality@musabkara-claude-marketplace
+claude plugin install autonomous-ops@musabkara-claude-marketplace
 ```
 
 ## İlgili
 
 - [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS (110 agent, local-first routing)
+- [Claude Code Plugins Official](https://github.com/anthropics/claude-plugins-official) — Anthropic's official marketplace

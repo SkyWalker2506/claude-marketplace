@@ -1,9 +1,9 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "SkyWalker2506-claude-plugins",
-  "description": "14 custom Claude Code plugins — Jira suite, code quality, research, autonomous ops, Telegram bridge, Flutter/Firebase, Git/GitHub, and more",
+  "name": "musabkara-claude-marketplace",
+  "description": "Claude Code plugin marketplace by Musab Kara — 14 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub",
   "owner": {
-    "name": "SkyWalker2506",
+    "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
   },
   "plugins": [
