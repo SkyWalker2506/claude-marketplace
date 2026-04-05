@@ -1,4 +1,4 @@
-# claude-plugins — Yönlendirici
+# claude-marketplace — Yönlendirici
 
 > **Bu dosya sadece yönlendiricidir.** Tüm kurallar `~/Projects/claude-config/CLAUDE.md` dosyasındadır.
 
