@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "musabkara-claude-marketplace",
-  "description": "Claude Code plugin marketplace by Musab Kara — 14 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub",
+  "description": "Claude Code plugin marketplace by Musab Kara — 15 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications",
   "owner": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -160,6 +160,17 @@
         "sha": "fc144d70bbe4dc4dda62df431d55e831c829f561"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-opencode-bridge"
+    },
+    {
+      "name": "notifications",
+      "description": "Multi-channel notifications — Telegram, macOS, sound control. DevFocus build error & AI question triggers. Sound mute toggle.",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-notifications.git",
+        "sha": "96e3ba568670e30c7e127082e4f7bf2a7c121da8"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-notifications"
     }
   ]
 }
