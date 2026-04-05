@@ -2,7 +2,7 @@
 
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
-**15 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+**18 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
 ---
 
@@ -56,6 +56,12 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 | [ai-review](https://github.com/SkyWalker2506/ccplugin-ai-review) | Automated GitHub PR review via OpenRouter ($0 cost) | `./install.sh ai-review` |
 | [sync-agents](https://github.com/SkyWalker2506/ccplugin-sync-agents) | Validate agent .md ↔ registry.json for Multi-Agent OS | `./install.sh sync-agents` |
 
+### AI Ops
+
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| [improve](https://github.com/SkyWalker2506/ccplugin-improve) | Analyzes videos, articles, ideas — extracts actionable improvements for your claude-config setup | `./install.sh improve` |
+
 ### Project Management
 
 | Plugin | Description | Install |
@@ -77,6 +83,8 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 | [telegram-bridge](https://github.com/SkyWalker2506/ccplugin-telegram) | Telegram bot — text, photo, doc, voice (Whisper TR/EN). Persistent Haiku agent | `./install.sh telegram-bridge` |
 | [daily-check](https://github.com/SkyWalker2506/ccplugin-daily-check) | Daily system health — Ollama, MCP, API keys, disk, token usage | `./install.sh daily-check` |
 | [devtools-setup](https://github.com/SkyWalker2506/ccplugin-devtools-setup) | Setup, migration, secrets, MCP config management | `./install.sh devtools-setup` |
+| [clipboard](https://github.com/SkyWalker2506/ccplugin-clipboard) | Cross-platform clipboard manager — macOS, Linux (X11/Wayland), Windows | `./install.sh clipboard` |
+| [voice-input](https://github.com/SkyWalker2506/ccplugin-voice-input) | macOS mic + Whisper transcript — Türkçe destekli, copied to clipboard | `./install.sh voice-input` |
 
 ---
 
