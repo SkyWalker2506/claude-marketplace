@@ -217,5 +217,19 @@
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-notifications"
     }
+    ,{
+      "id": "voice-input",
+      "name": "voice-input",
+      "description": "macOS mikrofon + Whisper transkript. Türkçe destekli. 3 backend: whisper.cpp (local), OpenAI API, Apple Speech. Sonuç clipboard'a kopyalanır.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "install_hook": "install.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-voice-input.git",
+        "sha": "62d889eff171b4cc52e880ac3ff7cdf07b65c394"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-voice-input"
+    }
   ]
 }
