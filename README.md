@@ -2,7 +2,7 @@
 
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
-**14 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+**15 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
 ---
 
@@ -38,6 +38,12 @@ Then browse with `/plugin > Discover`, or install directly from the command line
 | [jira-suite](https://github.com/SkyWalker2506/ccplugin-jira-suite) | Complete Jira management — loops, dashboard, decisions. Atlassian MCP included | `claude plugin install jira-suite@musabkara-claude-marketplace` |
 | [sprint-planner](https://github.com/SkyWalker2506/ccplugin-sprint-planner) | Sprint planning from PRD — epic & story generation | `claude plugin install sprint-planner@musabkara-claude-marketplace` |
 | [research-tools](https://github.com/SkyWalker2506/ccplugin-research-tools) | Web research, 12-category project analysis, PRD, Ralph | `claude plugin install research-tools@musabkara-claude-marketplace` |
+
+### Notifications & Focus
+
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| [notifications](https://github.com/SkyWalker2506/ccplugin-notifications) | Multi-channel notifications — Telegram, macOS, sound. DevFocus build error & AI question triggers | `claude plugin install notifications@musabkara-claude-marketplace` |
 
 ### Tools & Communication
 
