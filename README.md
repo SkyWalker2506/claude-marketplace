@@ -6,13 +6,38 @@ by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https:
 
 ---
 
-## Add This Marketplace
+## Install a Plugin
+
+```bash
+# One-liner install (no clone needed)
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) <plugin-name>
+
+# Example
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) sprint-planner
+
+# Or: clone the marketplace and run locally
+git clone https://github.com/SkyWalker2506/claude-marketplace
+cd claude-marketplace && ./install.sh sprint-planner
+```
+
+The installer will:
+1. Fetch the plugin catalog and resolve the plugin's GitHub repo
+2. Clone (or update) the plugin into `~/.claude/plugins/<name>/`
+3. Run the plugin's own `install.sh` if present, otherwise copy `commands/` and `skills/` into `~/.claude/`
+
+---
+
+## Add This Marketplace (Claude Code native)
 
 ```bash
 claude plugin marketplace add SkyWalker2506/claude-marketplace
 ```
 
-Then browse with `/plugin > Discover`, or install directly from the command line.
+Then browse with `/plugin > Discover`, or install directly:
+
+```bash
+claude plugin install sprint-planner@musabkara-claude-marketplace
+```
 
 ---
 
@@ -22,44 +47,44 @@ Then browse with `/plugin > Discover`, or install directly from the command line
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [code-quality](https://github.com/SkyWalker2506/ccplugin-code-quality) | Code audit, CLAUDE.md refine, jCodeMunch indexing | `claude plugin install code-quality@musabkara-claude-marketplace` |
-| [git-github](https://github.com/SkyWalker2506/ccplugin-git-github) | Git + GitHub MCP — PR, issue, branch, code search | `claude plugin install git-github@musabkara-claude-marketplace` |
-| [autonomous-ops](https://github.com/SkyWalker2506/ccplugin-autonomous-ops) | /yolo, /team-build, /rbg — zero-question autonomous modes | `claude plugin install autonomous-ops@musabkara-claude-marketplace` |
-| [flutter-firebase](https://github.com/SkyWalker2506/ccplugin-flutter-firebase) | Flutter + Firebase MCP — build, test, Firestore, Auth | `claude plugin install flutter-firebase@musabkara-claude-marketplace` |
-| [agent-browser](https://github.com/SkyWalker2506/ccplugin-agent-browser) | Headless browser automation — scrape, screenshot, e2e | `claude plugin install agent-browser@musabkara-claude-marketplace` |
-| [opencode-bridge](https://github.com/SkyWalker2506/ccplugin-opencode-bridge) | OpenCode/Zen + Ollama — free & local model bridge | `claude plugin install opencode-bridge@musabkara-claude-marketplace` |
-| [ai-review](https://github.com/SkyWalker2506/ccplugin-ai-review) | Automated GitHub PR review via OpenRouter ($0 cost) | `claude plugin install ai-review@musabkara-claude-marketplace` |
-| [sync-agents](https://github.com/SkyWalker2506/ccplugin-sync-agents) | Validate agent .md ↔ registry.json for Multi-Agent OS | `claude plugin install sync-agents@musabkara-claude-marketplace` |
+| [code-quality](https://github.com/SkyWalker2506/ccplugin-code-quality) | Code audit, CLAUDE.md refine, jCodeMunch indexing | `./install.sh code-quality` |
+| [git-github](https://github.com/SkyWalker2506/ccplugin-git-github) | Git + GitHub MCP — PR, issue, branch, code search | `./install.sh git-github` |
+| [autonomous-ops](https://github.com/SkyWalker2506/ccplugin-autonomous-ops) | /yolo, /team-build, /rbg — zero-question autonomous modes | `./install.sh autonomous-ops` |
+| [flutter-firebase](https://github.com/SkyWalker2506/ccplugin-flutter-firebase) | Flutter + Firebase MCP — build, test, Firestore, Auth | `./install.sh flutter-firebase` |
+| [agent-browser](https://github.com/SkyWalker2506/ccplugin-agent-browser) | Headless browser automation — scrape, screenshot, e2e | `./install.sh agent-browser` |
+| [opencode-bridge](https://github.com/SkyWalker2506/ccplugin-opencode-bridge) | OpenCode/Zen + Ollama — free & local model bridge | `./install.sh opencode-bridge` |
+| [ai-review](https://github.com/SkyWalker2506/ccplugin-ai-review) | Automated GitHub PR review via OpenRouter ($0 cost) | `./install.sh ai-review` |
+| [sync-agents](https://github.com/SkyWalker2506/ccplugin-sync-agents) | Validate agent .md ↔ registry.json for Multi-Agent OS | `./install.sh sync-agents` |
 
 ### Project Management
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [jira-suite](https://github.com/SkyWalker2506/ccplugin-jira-suite) | Complete Jira management — loops, dashboard, decisions. Atlassian MCP included | `claude plugin install jira-suite@musabkara-claude-marketplace` |
-| [sprint-planner](https://github.com/SkyWalker2506/ccplugin-sprint-planner) | Sprint planning from PRD — epic & story generation | `claude plugin install sprint-planner@musabkara-claude-marketplace` |
-| [research-tools](https://github.com/SkyWalker2506/ccplugin-research-tools) | Web research, 12-category project analysis, PRD, Ralph | `claude plugin install research-tools@musabkara-claude-marketplace` |
+| [jira-suite](https://github.com/SkyWalker2506/ccplugin-jira-suite) | Complete Jira management — loops, dashboard, decisions. Atlassian MCP included | `./install.sh jira-suite` |
+| [sprint-planner](https://github.com/SkyWalker2506/ccplugin-sprint-planner) | Sprint planning from PRD — epic & story generation | `./install.sh sprint-planner` |
+| [research-tools](https://github.com/SkyWalker2506/ccplugin-research-tools) | Web research, 12-category project analysis, PRD, Ralph | `./install.sh research-tools` |
 
 ### Notifications & Focus
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [notifications](https://github.com/SkyWalker2506/ccplugin-notifications) | Multi-channel notifications — Telegram, macOS, sound. DevFocus build error & AI question triggers | `claude plugin install notifications@musabkara-claude-marketplace` |
+| [notifications](https://github.com/SkyWalker2506/ccplugin-notifications) | Multi-channel notifications — Telegram, macOS, sound. DevFocus build error & AI question triggers | `./install.sh notifications` |
 
 ### Tools & Communication
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [telegram-bridge](https://github.com/SkyWalker2506/ccplugin-telegram) | Telegram bot — text, photo, doc, voice (Whisper TR/EN). Persistent Haiku agent | `claude plugin install telegram-bridge@musabkara-claude-marketplace` |
-| [daily-check](https://github.com/SkyWalker2506/ccplugin-daily-check) | Daily system health — Ollama, MCP, API keys, disk, token usage | `claude plugin install daily-check@musabkara-claude-marketplace` |
-| [devtools-setup](https://github.com/SkyWalker2506/ccplugin-devtools-setup) | Setup, migration, secrets, MCP config management | `claude plugin install devtools-setup@musabkara-claude-marketplace` |
+| [telegram-bridge](https://github.com/SkyWalker2506/ccplugin-telegram) | Telegram bot — text, photo, doc, voice (Whisper TR/EN). Persistent Haiku agent | `./install.sh telegram-bridge` |
+| [daily-check](https://github.com/SkyWalker2506/ccplugin-daily-check) | Daily system health — Ollama, MCP, API keys, disk, token usage | `./install.sh daily-check` |
+| [devtools-setup](https://github.com/SkyWalker2506/ccplugin-devtools-setup) | Setup, migration, secrets, MCP config management | `./install.sh devtools-setup` |
 
 ---
 
 ## Adding a New Plugin
 
 1. Create a repo: `SkyWalker2506/ccplugin-<name>`
-2. Add `.claude-plugin/plugin.json`, `commands/`, `skills/`
-3. Add an entry to `marketplace.json` (with commit SHA)
+2. Add `.claude-plugin/plugin.json`, `commands/`, `skills/`, and optionally `install.sh`
+3. Add an entry to `.claude-plugin/marketplace.json` (with `id`, `version`, `install_hook`)
 4. Push → `claude plugin marketplace update musabkara-claude-marketplace`
 
 ## Related

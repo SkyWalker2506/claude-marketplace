@@ -8,9 +8,12 @@
   },
   "plugins": [
     {
+      "id": "telegram-bridge",
       "name": "telegram-bridge",
       "description": "Bidirectional Telegram bot for Claude Code — text, photo, document, voice (Whisper TR/EN). Persistent agent mode with Haiku.",
+      "version": "1.0.0",
       "category": "communication",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-telegram.git",
@@ -19,9 +22,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-telegram"
     },
     {
+      "id": "ai-review",
       "name": "ai-review",
       "description": "Automated GitHub PR review via OpenRouter free models (Gemma 3 27B). $0 cost.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-ai-review.git",
@@ -30,9 +36,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-ai-review"
     },
     {
+      "id": "daily-check",
       "name": "daily-check",
       "description": "Daily system health check — Ollama models, MCP servers, API keys, disk/RAM usage, token cost report.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-daily-check.git",
@@ -41,9 +50,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-daily-check"
     },
     {
+      "id": "sync-agents",
       "name": "sync-agents",
       "description": "Validate and sync agent .md frontmatter with agent-registry.json for Multi-Agent OS.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-sync-agents.git",
@@ -52,9 +64,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-sync-agents"
     },
     {
+      "id": "jira-suite",
       "name": "jira-suite",
       "description": "Complete Jira management — /jira-run loops, sprint dashboard, task routing, decision workflow, Atlassian MCP included.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-jira-suite.git",
@@ -63,9 +78,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-jira-suite"
     },
     {
+      "id": "code-quality",
       "name": "code-quality",
       "description": "Code audit, CLAUDE.md refinement, jCodeMunch indexing — security, performance, cost, cleanup scanning.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-code-quality.git",
@@ -74,9 +92,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-code-quality"
     },
     {
+      "id": "research-tools",
       "name": "research-tools",
       "description": "Web research, 12-category project analysis, PRD generation, autonomous Ralph execution. Fetch MCP included.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-research-tools.git",
@@ -85,9 +106,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-research-tools"
     },
     {
+      "id": "autonomous-ops",
       "name": "autonomous-ops",
       "description": "Autonomous execution modes — /yolo (zero questions), /team-build (multi-agent loop), /rbg (background), /yolo-log.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops.git",
@@ -96,9 +120,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops"
     },
     {
+      "id": "devtools-setup",
       "name": "devtools-setup",
       "description": "Setup, migration, MCP config, secrets management, GitHub auth — /install, /bind, /migration, /add-mcp.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-devtools-setup.git",
@@ -107,9 +134,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-devtools-setup"
     },
     {
+      "id": "flutter-firebase",
       "name": "flutter-firebase",
       "description": "Flutter + Firebase MCP integration — build, test, hot reload, Firestore CRUD, Storage, Auth.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-flutter-firebase.git",
@@ -118,9 +148,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-flutter-firebase"
     },
     {
+      "id": "git-github",
       "name": "git-github",
       "description": "Git + GitHub MCP integration — PR creation, issue management, branch ops, code search, reviews.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-git-github.git",
@@ -129,9 +162,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-git-github"
     },
     {
+      "id": "sprint-planner",
       "name": "sprint-planner",
       "description": "Sprint planning from PRD/analysis — epic/story generation, estimation, Jira task creation.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-sprint-planner.git",
@@ -140,9 +176,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-sprint-planner"
     },
     {
+      "id": "agent-browser",
       "name": "agent-browser",
       "description": "Headless browser automation for AI agents — navigate, fill forms, click, screenshot, scrape, e2e test.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-agent-browser.git",
@@ -151,9 +190,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-agent-browser"
     },
     {
+      "id": "opencode-bridge",
       "name": "opencode-bridge",
       "description": "OpenCode (Zen) + Ollama local model bridge — free/local LLM switching, model management.",
+      "version": "1.0.0",
       "category": "development",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-opencode-bridge.git",
@@ -162,9 +204,12 @@
       "homepage": "https://github.com/SkyWalker2506/ccplugin-opencode-bridge"
     },
     {
+      "id": "notifications",
       "name": "notifications",
       "description": "Multi-channel notifications — Telegram, macOS, sound control. DevFocus build error & AI question triggers. Sound mute toggle.",
+      "version": "1.0.0",
       "category": "productivity",
+      "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-notifications.git",
