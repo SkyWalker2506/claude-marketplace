@@ -97,8 +97,10 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 
 ## Related
 
+- [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Claude ecosystem HQ, cross-project workspace
 - [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (134 agents, local-first routing)
 - [claude-agent-catalog](https://github.com/SkyWalker2506/claude-agent-catalog) — AI Agent Catalog (134 agents across 15 categories)
+- [SDK Market](https://github.com/SkyWalker2506/sdk-market) — production-ready SDKs and kits
 - [Claude Code Plugins Official](https://github.com/anthropics/claude-plugins-official) — Anthropic's official marketplace
 
 ## Author
