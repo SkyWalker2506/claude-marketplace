@@ -2,7 +2,7 @@
 
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
-**20 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+**21 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
 ---
 
