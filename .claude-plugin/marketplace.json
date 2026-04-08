@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "musabkara-claude-marketplace",
-  "description": "Claude Code plugin marketplace by Musab Kara — 17 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications, 3D creation",
+  "description": "Claude Code plugin marketplace by Musab Kara — 20 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications, 3D creation, clipboard, and more",
   "owner": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -220,7 +220,7 @@
     {
       "id": "voice-input",
       "name": "voice-input",
-      "description": "macOS mikrofon + Whisper transkript. Türkçe destekli. 3 backend: whisper.cpp (local), OpenAI API, Apple Speech. Sonuç clipboard'a kopyalanır.",
+      "description": "macOS mic + Whisper transcript — Turkish/English supported. 3 backends: whisper.cpp (local), OpenAI API, Apple Speech. Result copied to clipboard.",
       "version": "1.0.0",
       "category": "productivity",
       "install_hook": "install.sh",
@@ -244,6 +244,34 @@
         "sha": "6aef3b9cc12f48eba188d14737e6c772a19d2faa"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-3d-forge"
+    },
+    {
+      "id": "improve",
+      "name": "improve",
+      "description": "Analyzes videos, articles, and ideas — extracts actionable improvements for your claude-config setup.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "install_hook": "install.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-improve.git",
+        "sha": "latest"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-improve"
+    },
+    {
+      "id": "clipboard",
+      "name": "clipboard",
+      "description": "Cross-platform clipboard manager — macOS, Linux (X11/Wayland), Windows support.",
+      "version": "1.0.0",
+      "category": "tools",
+      "install_hook": "install.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-clipboard.git",
+        "sha": "latest"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-clipboard"
     }
   ]
 }
