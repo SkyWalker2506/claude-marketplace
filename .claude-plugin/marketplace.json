@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "musabkara-claude-marketplace",
-  "description": "Claude Code plugin marketplace by Musab Kara — 20 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications, 3D creation, clipboard, and more",
+  "description": "Claude Code plugin marketplace by Musab Kara — 21 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications, 3D creation, clipboard, frontend, backend, and more",
   "owner": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -255,7 +255,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-improve.git",
-        "sha": "latest"
+        "sha": "dd4c7c8f105d6d42492a71ec4c351fcae70217bc"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-improve"
     },
@@ -269,9 +269,37 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-clipboard.git",
-        "sha": "latest"
+        "sha": "c78e1a9821b1d934a18412242a9afc7339fb2b72"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-clipboard"
+    },
+    {
+      "id": "backend-forge",
+      "name": "backend-forge",
+      "description": "Machine-callable infrastructure API layer — Vercel + Supabase deployment, project provisioning, database management.",
+      "version": "1.0.0",
+      "category": "development",
+      "install_hook": "install.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-backend-forge.git",
+        "sha": "b19c266a94745865808683cdbc74e8b506366c89"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-backend-forge"
+    },
+    {
+      "id": "frontend-craft",
+      "name": "frontend-craft",
+      "description": "ANF frontend pipeline for high-end sites & apps — Web, Flutter, React Native. Design system, component generation, responsive layouts.",
+      "version": "1.0.0",
+      "category": "development",
+      "install_hook": "install.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-frontend-craft.git",
+        "sha": "5e965405980106ef869995c6bb5cae153099585e"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-frontend-craft"
     }
   ]
 }
