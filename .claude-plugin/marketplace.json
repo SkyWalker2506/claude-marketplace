@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "musabkara-claude-marketplace",
-  "description": "Claude Code plugin marketplace by Musab Kara — 15 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications",
+  "description": "Claude Code plugin marketplace by Musab Kara — 16 plugins for Jira, code quality, Telegram, research, autonomous ops, Flutter/Firebase, Git/GitHub, notifications, 3D creation",
   "owner": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -230,6 +230,20 @@
         "sha": "62d889eff171b4cc52e880ac3ff7cdf07b65c394"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-voice-input"
+    },
+    {
+      "id": "3d-forge",
+      "name": "3d-forge",
+      "description": "AI-powered 3D creation studio — Blender MCP orchestration with 24 presets (materials, lighting, scenes), Meshy AI mesh generation, workflow templates, render feedback loop.",
+      "version": "0.2.0",
+      "category": "creative",
+      "install_hook": "setup.sh",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SkyWalker2506/ccplugin-3d-forge.git",
+        "sha": "6aef3b9cc12f48eba188d14737e6c772a19d2faa"
+      },
+      "homepage": "https://github.com/SkyWalker2506/ccplugin-3d-forge"
     }
   ]
 }

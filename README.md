@@ -2,7 +2,7 @@
 
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
-**18 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+**19 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
 ---
 
@@ -75,6 +75,12 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 | Plugin | Description | Install |
 |--------|-------------|---------|
 | [notifications](https://github.com/SkyWalker2506/ccplugin-notifications) | Multi-channel notifications — Telegram, macOS, sound. DevFocus build error & AI question triggers | `./install.sh notifications` |
+
+### Creative
+
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| [3d-forge](https://github.com/SkyWalker2506/ccplugin-3d-forge) | AI-powered 3D creation studio — Blender MCP, 24 presets, Meshy AI, render feedback loop | `./install.sh 3d-forge` |
 
 ### Tools & Communication
 
