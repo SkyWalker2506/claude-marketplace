@@ -2,7 +2,7 @@
 
 by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
 
-**19 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+**20 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
 ---
 
@@ -47,6 +47,7 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
+| [frontend-craft](https://github.com/SkyWalker2506/ccplugin-frontend-craft) | ANF frontend pipeline — high-end sites & apps (Web + Flutter + React Native) | `./install.sh frontend-craft` |
 | [code-quality](https://github.com/SkyWalker2506/ccplugin-code-quality) | Code audit, CLAUDE.md refine, jCodeMunch indexing | `./install.sh code-quality` |
 | [git-github](https://github.com/SkyWalker2506/ccplugin-git-github) | Git + GitHub MCP — PR, issue, branch, code search | `./install.sh git-github` |
 | [autonomous-ops](https://github.com/SkyWalker2506/ccplugin-autonomous-ops) | /yolo, /team-build, /rbg — zero-question autonomous modes | `./install.sh autonomous-ops` |
