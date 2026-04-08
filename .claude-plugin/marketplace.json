@@ -67,13 +67,13 @@
       "id": "jira-suite",
       "name": "jira-suite",
       "description": "Complete Jira management — /jira-run loops, sprint dashboard, task routing, decision workflow, Atlassian MCP included.",
-      "version": "1.0.0",
+      "version": "1.5.0",
       "category": "productivity",
       "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-jira-suite.git",
-        "sha": "de79097b04c82fa8fe5899b49215d23833741d79"
+        "sha": "d7e90d2f15518a46374035d9e401e1ce09f7c0cb"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-jira-suite"
     },
@@ -87,7 +87,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-code-quality.git",
-        "sha": "9524246adbf46987972c364a6f867a12bff523ca"
+        "sha": "f63ca43c09e050469ff2ecc5cffa5b88e6642cae"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-code-quality"
     },
@@ -101,7 +101,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-research-tools.git",
-        "sha": "2e1e465ab393b1e3b90a247d8183884d698595ae"
+        "sha": "9fd6a7d732db0c573334c2087d918d6b5a9cd536"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-research-tools"
     },
@@ -115,7 +115,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops.git",
-        "sha": "0ede3cab566492c17d1ee856cfbbf8cbeb741f9e"
+        "sha": "2bdd9aa80edb66c437dfbc43f66c5f907c9c8335"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-autonomous-ops"
     },
@@ -157,7 +157,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-git-github.git",
-        "sha": "0bd8974c7c71c8fcebd6eed7aaa1accd3de64b39"
+        "sha": "4b823cb3f9fd750ce9991a66aab8a6dbc1b48f14"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-git-github"
     },
@@ -171,7 +171,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-sprint-planner.git",
-        "sha": "76d940fb5f1cac8ba48962d28a4a5aea53a2bc1c"
+        "sha": "b764868beb0c14111370b456d39dd2db360f146b"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-sprint-planner"
     },
@@ -255,7 +255,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-improve.git",
-        "sha": "dd4c7c8f105d6d42492a71ec4c351fcae70217bc"
+        "sha": "743166db5634b7ce8d57aea2a05d99c9380543c8"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-improve"
     },
@@ -269,7 +269,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-clipboard.git",
-        "sha": "c78e1a9821b1d934a18412242a9afc7339fb2b72"
+        "sha": "df234e5ba9d84238e5e02e34833be7a2fd3e2726"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-clipboard"
     },
@@ -291,13 +291,13 @@
       "id": "frontend-craft",
       "name": "frontend-craft",
       "description": "ANF frontend pipeline for high-end sites & apps — Web, Flutter, React Native. Design system, component generation, responsive layouts.",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "category": "development",
       "install_hook": "install.sh",
       "source": {
         "source": "url",
         "url": "https://github.com/SkyWalker2506/ccplugin-frontend-craft.git",
-        "sha": "5e965405980106ef869995c6bb5cae153099585e"
+        "sha": "a15b93db3989e79df690127281b09f1830760c76"
       },
       "homepage": "https://github.com/SkyWalker2506/ccplugin-frontend-craft"
     }
