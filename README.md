@@ -4,6 +4,10 @@ by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https:
 
 **20 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
 
+### Ecosystem on GitHub
+
+Read the stack in this order: **[Agent catalog](https://github.com/SkyWalker2506/claude-agent-catalog)** → **marketplace (this repo)** → **[claude-config](https://github.com/SkyWalker2506/claude-config)** (full OS) → **[ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ)** (workspace hub). Plugin count and tables stay current with each release.
+
 ---
 
 ## Install a Plugin
@@ -104,9 +108,9 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 
 ## Related
 
-- [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Claude ecosystem HQ, cross-project workspace
-- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (134 agents, local-first routing)
-- [claude-agent-catalog](https://github.com/SkyWalker2506/claude-agent-catalog) — AI Agent Catalog (134 agents across 15 categories)
+- [claude-agent-catalog](https://github.com/SkyWalker2506/claude-agent-catalog) — AI agent inventory (start here on GitHub)
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (install.sh, agents, skills, MCP)
+- [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Ecosystem HQ, cross-project workspace
 - [SDK Market](https://github.com/SkyWalker2506/sdk-market) — production-ready SDKs and kits
 - [Claude Code Plugins Official](https://github.com/anthropics/claude-plugins-official) — Anthropic's official marketplace
 
