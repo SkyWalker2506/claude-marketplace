@@ -1,12 +1,34 @@
+<div align="center">
+
 # Claude Code Plugin Marketplace
 
-by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
+### Curated **plugins** for [**Claude Code**](https://claude.ai/claude-code) — one repo, many `ccplugin-*` projects
 
-**20 plugins** for Claude Code. Each plugin lives in its own repository — this repo is the catalog.
+[![Claude Code](https://img.shields.io/badge/Claude_Code-plugins-191919?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
+[![Marketplace](https://img.shields.io/badge/plugins-20+-f97316)](https://github.com/SkyWalker2506/claude-marketplace#plugins)
+[![Install](https://img.shields.io/badge/install-curl_|_bash-0ea5e9)](https://github.com/SkyWalker2506/claude-marketplace#install-a-plugin)
+[![Author](https://img.shields.io/badge/Musab_Kara-LinkedIn-0A66C2?logo=linkedin)](https://linkedin.com/in/musab-kara-85580612a)
+
+Each plugin lives in its own **`SkyWalker2506/ccplugin-*`** repository — **this** repo is the **catalog**, installer, and native marketplace entry.
+
+[Install](#install-a-plugin) · [Native marketplace](#add-this-marketplace-claude-code-native) · [Add a plugin](#adding-a-new-plugin)
+
+</div>
+
+---
 
 ### Ecosystem on GitHub
 
-Read the stack in this order: **[Agent catalog](https://github.com/SkyWalker2506/claude-agent-catalog)** → **marketplace (this repo)** → **[claude-config](https://github.com/SkyWalker2506/claude-config)** (full OS) → **[ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ)** (workspace hub). Plugin count and tables stay current with each release.
+Read the stack in order: **[Agent catalog](https://github.com/SkyWalker2506/claude-agent-catalog)** → **marketplace (this repo)** → **[claude-config](https://github.com/SkyWalker2506/claude-config)** (full OS) → **[ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ)** (workspace hub).
+
+```mermaid
+flowchart LR
+  A[1 Agent Catalog] --> B[2 Marketplace]
+  B --> C[3 claude-config]
+  C --> D[4 ClaudeHQ]
+```
+
+Tables track each release; pin versions in your own docs when you need reproducibility.
 
 ---
 
