@@ -46,6 +46,11 @@ git clone https://github.com/SkyWalker2506/claude-marketplace
 cd claude-marketplace && ./install.sh sprint-planner
 ```
 
+```bash
+# List all available plugins
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) --list
+```
+
 The installer will:
 1. Fetch the plugin catalog and resolve the plugin's GitHub repo
 2. Clone (or update) the plugin into `~/.claude/plugins/<name>/`
