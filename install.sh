@@ -24,11 +24,30 @@ err()  { printf "${RED}[error]${NC} %s\n" "$*" >&2; }
 # --- Argument check ---
 if [[ $# -lt 1 ]]; then
   err "Usage: install.sh <plugin-name>"
+  err "       install.sh --list      # show all available plugins"
   err "Example: install.sh sprint-planner"
   exit 1
 fi
 
 PLUGIN_NAME="$1"
+
+# --- List mode ---
+if [[ "$PLUGIN_NAME" == "--list" || "$PLUGIN_NAME" == "list" ]]; then
+  for cmd in curl jq; do
+    if ! command -v "$cmd" &>/dev/null; then
+      err "Required command not found: $cmd"
+      exit 1
+    fi
+  done
+  log "Fetching plugin catalog..."
+  if ! CATALOG=$(curl -fsSL --connect-timeout 10 "$MARKETPLACE_JSON" 2>/dev/null); then
+    err "Failed to fetch marketplace catalog. Check your internet connection."
+    exit 1
+  fi
+  ok "Available plugins (${#CATALOG} bytes):"
+  echo "$CATALOG" | jq -r '.plugins[] | "  \(.name) (\(.version // "latest")) — \(.description)"' | sort
+  exit 0
+fi
 
 # --- Dependency check ---
 for cmd in curl git jq; do
