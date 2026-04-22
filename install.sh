@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # Claude Marketplace — Plugin Installer
 # Usage: bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) <plugin-name>
+# Version: 1.1.0
 
 set -euo pipefail
+
+INSTALLER_VERSION="1.1.0"
 
 MARKETPLACE_JSON="https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/.claude-plugin/marketplace.json"
 PLUGIN_DIR="${HOME}/.claude/plugins"
@@ -26,11 +29,18 @@ if [[ $# -lt 1 ]]; then
   err "Usage: install.sh <plugin-name>"
   err "       install.sh --list                   # show all available plugins"
   err "       install.sh --uninstall <plugin>     # remove an installed plugin"
+  err "       install.sh --version                # show installer version"
   err "Example: install.sh sprint-planner"
   exit 1
 fi
 
 PLUGIN_NAME="$1"
+
+# --- Version mode ---
+if [[ "$PLUGIN_NAME" == "--version" || "$PLUGIN_NAME" == "-v" ]]; then
+  echo "claude-marketplace installer v${INSTALLER_VERSION}"
+  exit 0
+fi
 
 # --- List mode ---
 if [[ "$PLUGIN_NAME" == "--list" || "$PLUGIN_NAME" == "list" ]]; then
