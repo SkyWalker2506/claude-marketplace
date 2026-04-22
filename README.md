@@ -5,7 +5,7 @@
 ### Curated **plugins** for [**Claude Code**](https://claude.ai/claude-code) — one repo, many `ccplugin-*` projects
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugins-191919?logo=anthropic&logoColor=white)](https://claude.ai/claude-code)
-[![Marketplace](https://img.shields.io/badge/plugins-20+-f97316)](https://github.com/SkyWalker2506/claude-marketplace#plugins)
+[![Marketplace](https://img.shields.io/badge/plugins-21-f97316)](https://github.com/SkyWalker2506/claude-marketplace#plugins)
 [![Install](https://img.shields.io/badge/install-curl_|_bash-0ea5e9)](https://github.com/SkyWalker2506/claude-marketplace#install-a-plugin)
 [![Author](https://img.shields.io/badge/Musab_Kara-LinkedIn-0A66C2?logo=linkedin)](https://linkedin.com/in/musab-kara-85580612a)
 
@@ -82,6 +82,7 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 | [opencode-bridge](https://github.com/SkyWalker2506/ccplugin-opencode-bridge) | OpenCode/Zen + Ollama — free & local model bridge | `./install.sh opencode-bridge` |
 | [ai-review](https://github.com/SkyWalker2506/ccplugin-ai-review) | Automated GitHub PR review via OpenRouter ($0 cost) | `./install.sh ai-review` |
 | [sync-agents](https://github.com/SkyWalker2506/ccplugin-sync-agents) | Validate agent .md ↔ registry.json for Multi-Agent OS | `./install.sh sync-agents` |
+| [backend-forge](https://github.com/SkyWalker2506/ccplugin-backend-forge) | Machine-callable infra API — Vercel + Supabase deploy, provisioning, DB ops | `./install.sh backend-forge` |
 
 ### AI Ops
 
