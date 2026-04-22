@@ -24,7 +24,8 @@ err()  { printf "${RED}[error]${NC} %s\n" "$*" >&2; }
 # --- Argument check ---
 if [[ $# -lt 1 ]]; then
   err "Usage: install.sh <plugin-name>"
-  err "       install.sh --list      # show all available plugins"
+  err "       install.sh --list                   # show all available plugins"
+  err "       install.sh --uninstall <plugin>     # remove an installed plugin"
   err "Example: install.sh sprint-planner"
   exit 1
 fi
@@ -44,8 +45,34 @@ if [[ "$PLUGIN_NAME" == "--list" || "$PLUGIN_NAME" == "list" ]]; then
     err "Failed to fetch marketplace catalog. Check your internet connection."
     exit 1
   fi
-  ok "Available plugins (${#CATALOG} bytes):"
-  echo "$CATALOG" | jq -r '.plugins[] | "  \(.name) (\(.version // "latest")) — \(.description)"' | sort
+  PLUGIN_COUNT=$(echo "$CATALOG" | jq '.plugins | length')
+  ok "Available plugins (${PLUGIN_COUNT} total):"
+  echo ""
+  echo "$CATALOG" | jq -r '.plugins[] | "  \(.name)\t\(.version // "latest")\t\(.description)"' \
+    | sort \
+    | awk -F'\t' '{ printf "  %-25s %-10s %s\n", $1, $2, $3 }'
+  exit 0
+fi
+
+# --- Uninstall mode ---
+if [[ "$PLUGIN_NAME" == "--uninstall" || "$PLUGIN_NAME" == "uninstall" ]]; then
+  if [[ $# -lt 2 ]]; then
+    err "Usage: install.sh --uninstall <plugin-name>"
+    exit 1
+  fi
+  TARGET="$2"
+  UNINSTALL_PATH="${PLUGIN_DIR}/${TARGET}"
+  if [[ ! -d "$UNINSTALL_PATH" ]]; then
+    err "Plugin '${TARGET}' is not installed at ${UNINSTALL_PATH}"
+    exit 1
+  fi
+  # Run plugin's own uninstall.sh if present
+  if [[ -f "${UNINSTALL_PATH}/uninstall.sh" ]]; then
+    log "Running plugin uninstall hook..."
+    bash "${UNINSTALL_PATH}/uninstall.sh"
+  fi
+  rm -rf "$UNINSTALL_PATH"
+  ok "Plugin '${TARGET}' uninstalled."
   exit 0
 fi
 

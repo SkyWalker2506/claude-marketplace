@@ -49,6 +49,9 @@ cd claude-marketplace && ./install.sh sprint-planner
 ```bash
 # List all available plugins
 bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) --list
+
+# Uninstall a plugin
+./install.sh --uninstall sprint-planner
 ```
 
 The installer will:
