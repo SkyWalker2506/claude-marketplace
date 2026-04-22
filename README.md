@@ -52,6 +52,9 @@ bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketp
 
 # Uninstall a plugin
 ./install.sh --uninstall sprint-planner
+
+# Check which plugins are installed locally
+./install.sh --check
 ```
 
 The installer will:

@@ -30,6 +30,7 @@ if [[ $# -lt 1 ]]; then
   err "       install.sh --list                   # show all available plugins"
   err "       install.sh --uninstall <plugin>     # remove an installed plugin"
   err "       install.sh --version                # show installer version"
+  err "       install.sh --check                  # list installed plugins"
   err "Example: install.sh sprint-planner"
   exit 1
 fi
@@ -39,6 +40,33 @@ PLUGIN_NAME="$1"
 # --- Version mode ---
 if [[ "$PLUGIN_NAME" == "--version" || "$PLUGIN_NAME" == "-v" ]]; then
   echo "claude-marketplace installer v${INSTALLER_VERSION}"
+  exit 0
+fi
+
+# --- Check mode (list installed plugins) ---
+if [[ "$PLUGIN_NAME" == "--check" || "$PLUGIN_NAME" == "check" ]]; then
+  if [[ ! -d "$PLUGIN_DIR" ]]; then
+    warn "No plugins installed (${PLUGIN_DIR} does not exist)"
+    exit 0
+  fi
+  installed=()
+  for d in "${PLUGIN_DIR}"/*/; do
+    [[ -d "$d" ]] || continue
+    name=$(basename "$d")
+    version="unknown"
+    if [[ -f "${d}.claude-plugin/plugin.json" ]]; then
+      version=$(jq -r '.version // "unknown"' "${d}.claude-plugin/plugin.json" 2>/dev/null || echo "unknown")
+    fi
+    installed+=("${name}@${version}")
+  done
+  if [[ ${#installed[@]} -eq 0 ]]; then
+    warn "No plugins installed in ${PLUGIN_DIR}"
+  else
+    ok "Installed plugins (${#installed[@]}):"
+    for p in "${installed[@]}"; do
+      printf "  %s\n" "$p"
+    done
+  fi
   exit 0
 fi
 
