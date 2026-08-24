@@ -105,7 +105,6 @@ claude plugin install sprint-planner@musabkara-claude-marketplace
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [jira-suite](https://github.com/SkyWalker2506/ccplugin-jira-suite) | Complete Jira management — loops, dashboard, decisions. Atlassian MCP included | `./install.sh jira-suite` |
 | [sprint-planner](https://github.com/SkyWalker2506/ccplugin-sprint-planner) | Sprint planning from PRD — epic & story generation | `./install.sh sprint-planner` |
 | [research-tools](https://github.com/SkyWalker2506/ccplugin-research-tools) | Web research, 12-category project analysis, PRD, Ralph | `./install.sh research-tools` |
 
